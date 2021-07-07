@@ -22,6 +22,7 @@
 		D6EBC4372695F3180007187D /* HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC4362695F3180007187D /* HomeFeedViewController.m */; };
 		D6EBC43A269637B90007187D /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC439269637B90007187D /* ComposeViewController.m */; };
 		D6EBC43E269644FD0007187D /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC43D269644FD0007187D /* Post.m */; };
+		D6EBC442269662840007187D /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC441269662840007187D /* PostCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		D6EBC439269637B90007187D /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
 		D6EBC43C269644FD0007187D /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		D6EBC43D269644FD0007187D /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		D6EBC440269662840007187D /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		D6EBC441269662840007187D /* PostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 		F27A6131A9AE7D0815F75D86 /* Pods-InstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramTests.debug.xcconfig"; path = "Target Support Files/Pods-InstagramTests/Pods-InstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE13A059295FE81B365BA339 /* Pods-Instagram-InstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-InstagramUITests.release.xcconfig"; path = "Target Support Files/Pods-Instagram-InstagramUITests/Pods-Instagram-InstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +146,7 @@
 		D6EBC3FA2695E9650007187D /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				D6EBC43F2696623E0007187D /* Views */,
 				D6EBC43B269644D60007187D /* Models */,
 				D6EBC4312695F17E0007187D /* View Controllers */,
 				D6EBC3FB2695E9650007187D /* AppDelegate.h */,
@@ -196,6 +200,15 @@
 				D6EBC43D269644FD0007187D /* Post.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D6EBC43F2696623E0007187D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6EBC440269662840007187D /* PostCell.h */,
+				D6EBC441269662840007187D /* PostCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EF7815D0E695392868266AA5 /* Frameworks */ = {
@@ -448,6 +461,7 @@
 				D6EBC4372695F3180007187D /* HomeFeedViewController.m in Sources */,
 				D6EBC3FD2695E9650007187D /* AppDelegate.m in Sources */,
 				D6EBC40E2695E9660007187D /* main.m in Sources */,
+				D6EBC442269662840007187D /* PostCell.m in Sources */,
 				D6EBC43A269637B90007187D /* ComposeViewController.m in Sources */,
 				D6EBC4002695E9650007187D /* SceneDelegate.m in Sources */,
 				D6EBC4342695F1980007187D /* LoginViewController.m in Sources */,

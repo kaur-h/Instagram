@@ -10,8 +10,13 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "SceneDelegate.h"
+#import "PostCell.h"
+#import "Post.h"
 
-@interface HomeFeedViewController ()
+@interface HomeFeedViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *arrayOfPosts;
+@property (nonatomic,strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -20,6 +25,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    
+    [self fetchHomeFeed];
+    
+    //Refresh Control
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    self.refreshControl.tintColor = UIColor.blackColor;
+    [self.refreshControl addTarget:self action:@selector(fetchHomeFeed) forControlEvents:UIControlEventValueChanged];
+    [self.tableView insertSubview:self.refreshControl atIndex:0];
+}
+
+-(void) fetchHomeFeed {
+    // construct query
+    PFQuery *postQuery = [Post query];
+    [postQuery orderByDescending:@"createdAt"];
+    [postQuery includeKey:@"author"];
+    postQuery.limit = 20;
+
+    // fetch data asynchronously
+    [postQuery findObjectsInBackgroundWithBlock:^(NSArray<Post *> * _Nullable posts, NSError * _Nullable error) {
+        if (posts) {
+            // do something with the data fetched
+            NSLog(@"Successfully loaded home feed");
+            self.arrayOfPosts = posts;
+            [self.tableView reloadData];
+            [self.refreshControl endRefreshing];
+        }
+        else {
+            // handle error
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
+    
 }
 - (IBAction)logoutClicked:(id)sender {
     //Logging out user
@@ -34,6 +73,18 @@
     LoginViewController *loginViewController = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
     myDelegate.window.rootViewController = loginViewController;
     
+}
+
+- (NSInteger) tableView: (UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.arrayOfPosts.count;
+}
+
+- (UITableViewCell *) tableView: (UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    PostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PostCell"];
+    Post *post = self.arrayOfPosts[indexPath.row];
+    [cell setPost:post];
+//    cell.delegate = self;
+    return cell;
 }
 
 /*
