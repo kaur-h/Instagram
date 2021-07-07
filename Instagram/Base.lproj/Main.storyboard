@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="e6U-9q-hg6"/>
                     <connections>
                         <outlet property="passwordField" destination="IUo-It-kIm" id="8jE-q6-i7m"/>
                         <outlet property="usernameField" destination="f6S-TC-59E" id="uBo-Ae-qG1"/>
@@ -68,14 +69,21 @@
         <!--Home Feed-->
         <scene sceneID="zKH-YH-cqC">
             <objects>
-                <viewController id="l05-lG-g2C" customClass="HomeFeedViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeFeedViewController" id="l05-lG-g2C" customClass="HomeFeedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bRv-tE-QZm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="3sJ-7c-cdM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Feed" id="CcH-hq-zIG"/>
+                    <navigationItem key="navigationItem" title="Home Feed" id="CcH-hq-zIG">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="bF3-UT-Hzg">
+                            <connections>
+                                <action selector="logoutClicked:" destination="l05-lG-g2C" id="rL4-rG-mIp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="WBW-Pd-AcI"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T11-1G-Ghv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,7 +92,7 @@
         <!--Navigation Controller-->
         <scene sceneID="jnJ-xx-Ojs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eUA-qu-guG" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eUA-qu-guG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kqE-7P-qat">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -101,6 +109,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="insta_camera_btn" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

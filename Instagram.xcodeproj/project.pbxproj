@@ -12,7 +12,6 @@
 		CB549592FA6D2169CD1B220D /* Pods_Instagram_InstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8E703D39A3DDF7B21E8E0B /* Pods_Instagram_InstagramUITests.framework */; };
 		D6EBC3FD2695E9650007187D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC3FC2695E9650007187D /* AppDelegate.m */; };
 		D6EBC4002695E9650007187D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC3FF2695E9650007187D /* SceneDelegate.m */; };
-		D6EBC4032695E9650007187D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC4022695E9650007187D /* ViewController.m */; };
 		D6EBC4062695E9650007187D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EBC4042695E9650007187D /* Main.storyboard */; };
 		D6EBC4082695E9660007187D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EBC4072695E9660007187D /* Assets.xcassets */; };
 		D6EBC40B2695E9660007187D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EBC4092695E9660007187D /* LaunchScreen.storyboard */; };
@@ -53,8 +52,6 @@
 		D6EBC3FC2695E9650007187D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D6EBC3FE2695E9650007187D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		D6EBC3FF2695E9650007187D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		D6EBC4012695E9650007187D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D6EBC4022695E9650007187D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D6EBC4052695E9650007187D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6EBC4072695E9660007187D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6EBC40A2695E9660007187D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -145,8 +142,6 @@
 				D6EBC3FC2695E9650007187D /* AppDelegate.m */,
 				D6EBC3FE2695E9650007187D /* SceneDelegate.h */,
 				D6EBC3FF2695E9650007187D /* SceneDelegate.m */,
-				D6EBC4012695E9650007187D /* ViewController.h */,
-				D6EBC4022695E9650007187D /* ViewController.m */,
 				D6EBC4042695E9650007187D /* Main.storyboard */,
 				D6EBC4072695E9660007187D /* Assets.xcassets */,
 				D6EBC4092695E9660007187D /* LaunchScreen.storyboard */,
@@ -432,7 +427,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6EBC4032695E9650007187D /* ViewController.m in Sources */,
 				D6EBC4372695F3180007187D /* HomeFeedViewController.m in Sources */,
 				D6EBC3FD2695E9650007187D /* AppDelegate.m in Sources */,
 				D6EBC40E2695E9660007187D /* main.m in Sources */,
