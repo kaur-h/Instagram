@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		D6EBC40E2695E9660007187D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC40D2695E9660007187D /* main.m */; };
 		D6EBC4182695E9660007187D /* InstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC4172695E9660007187D /* InstagramTests.m */; };
 		D6EBC4232695E9660007187D /* InstagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC4222695E9660007187D /* InstagramUITests.m */; };
+		D6EBC4342695F1980007187D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC4332695F1980007187D /* LoginViewController.m */; };
+		D6EBC4372695F3180007187D /* HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC4362695F3180007187D /* HomeFeedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		D6EBC41E2695E9660007187D /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EBC4222695E9660007187D /* InstagramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramUITests.m; sourceTree = "<group>"; };
 		D6EBC4242695E9660007187D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6EBC4322695F1980007187D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D6EBC4332695F1980007187D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D6EBC4352695F3180007187D /* HomeFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFeedViewController.h; sourceTree = "<group>"; };
+		D6EBC4362695F3180007187D /* HomeFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeFeedViewController.m; sourceTree = "<group>"; };
 		F27A6131A9AE7D0815F75D86 /* Pods-InstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramTests.debug.xcconfig"; path = "Target Support Files/Pods-InstagramTests/Pods-InstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE13A059295FE81B365BA339 /* Pods-Instagram-InstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-InstagramUITests.release.xcconfig"; path = "Target Support Files/Pods-Instagram-InstagramUITests/Pods-Instagram-InstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +112,6 @@
 				F27A6131A9AE7D0815F75D86 /* Pods-InstagramTests.debug.xcconfig */,
 				285AD1F356BDFB5F743F0A71 /* Pods-InstagramTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,6 +140,7 @@
 		D6EBC3FA2695E9650007187D /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				D6EBC4312695F17E0007187D /* View Controllers */,
 				D6EBC3FB2695E9650007187D /* AppDelegate.h */,
 				D6EBC3FC2695E9650007187D /* AppDelegate.m */,
 				D6EBC3FE2695E9650007187D /* SceneDelegate.h */,
@@ -166,6 +172,17 @@
 				D6EBC4242695E9660007187D /* Info.plist */,
 			);
 			path = InstagramUITests;
+			sourceTree = "<group>";
+		};
+		D6EBC4312695F17E0007187D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6EBC4322695F1980007187D /* LoginViewController.h */,
+				D6EBC4332695F1980007187D /* LoginViewController.m */,
+				D6EBC4352695F3180007187D /* HomeFeedViewController.h */,
+				D6EBC4362695F3180007187D /* HomeFeedViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		EF7815D0E695392868266AA5 /* Frameworks */ = {
@@ -416,9 +433,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6EBC4032695E9650007187D /* ViewController.m in Sources */,
+				D6EBC4372695F3180007187D /* HomeFeedViewController.m in Sources */,
 				D6EBC3FD2695E9650007187D /* AppDelegate.m in Sources */,
 				D6EBC40E2695E9660007187D /* main.m in Sources */,
 				D6EBC4002695E9650007187D /* SceneDelegate.m in Sources */,
+				D6EBC4342695F1980007187D /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
