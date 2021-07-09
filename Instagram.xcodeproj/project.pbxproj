@@ -23,6 +23,7 @@
 		D6EBC43A269637B90007187D /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC439269637B90007187D /* ComposeViewController.m */; };
 		D6EBC43E269644FD0007187D /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC43D269644FD0007187D /* Post.m */; };
 		D6EBC442269662840007187D /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC441269662840007187D /* PostCell.m */; };
+		D6EBC4452698BC430007187D /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EBC4442698BC430007187D /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		D6EBC43D269644FD0007187D /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		D6EBC440269662840007187D /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
 		D6EBC441269662840007187D /* PostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
+		D6EBC4432698BC430007187D /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		D6EBC4442698BC430007187D /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		F27A6131A9AE7D0815F75D86 /* Pods-InstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramTests.debug.xcconfig"; path = "Target Support Files/Pods-InstagramTests/Pods-InstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE13A059295FE81B365BA339 /* Pods-Instagram-InstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-InstagramUITests.release.xcconfig"; path = "Target Support Files/Pods-Instagram-InstagramUITests/Pods-Instagram-InstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +192,8 @@
 				D6EBC4362695F3180007187D /* HomeFeedViewController.m */,
 				D6EBC438269637B90007187D /* ComposeViewController.h */,
 				D6EBC439269637B90007187D /* ComposeViewController.m */,
+				D6EBC4432698BC430007187D /* DetailsViewController.h */,
+				D6EBC4442698BC430007187D /* DetailsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				D6EBC442269662840007187D /* PostCell.m in Sources */,
 				D6EBC43A269637B90007187D /* ComposeViewController.m in Sources */,
 				D6EBC4002695E9650007187D /* SceneDelegate.m in Sources */,
+				D6EBC4452698BC430007187D /* DetailsViewController.m in Sources */,
 				D6EBC4342695F1980007187D /* LoginViewController.m in Sources */,
 				D6EBC43E269644FD0007187D /* Post.m in Sources */,
 			);

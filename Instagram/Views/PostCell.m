@@ -29,6 +29,8 @@
     [self.postImage loadInBackground];
     self.captionLabel.text = post[@"caption"];
     self.usernameLabel.text = post[@"author"][@"username"];
+    self.likeCount.text = [NSString stringWithFormat:@"%@", post[@"likeCount"]];
+    self.commentCount.text = [NSString stringWithFormat:@"%@", post[@"commentCount"]];
 }
 
 @end

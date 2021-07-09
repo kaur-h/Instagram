@@ -7,6 +7,7 @@
 
 #import "Post.h"
 #import "Parse/Parse.h"
+#import "NSDate+DateTools.h"
 
 @implementation Post
 
@@ -17,6 +18,7 @@
 @dynamic image;
 @dynamic likeCount;
 @dynamic commentCount;
+@dynamic createdAt;
 
 + (nonnull NSString *)parseClassName {
     return @"Post";
@@ -31,6 +33,14 @@
     newPost.likeCount = @(0);
     newPost.commentCount = @(0);
     
+    NSDate *date = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    newPost.createdAtString = [dateFormatter stringFromDate:date];
+    
+    newPost.liked = NO;
+
     [newPost saveInBackgroundWithBlock: completion];
 }
 
